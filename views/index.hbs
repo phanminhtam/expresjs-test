@@ -1,0 +1,17 @@
+<main>
+    <h1>TaMy Hello</h1>
+    <button style="padding: 0.5rem;" onclick="getApi()">Test API read file</button>
+    <button style="padding: 0.5rem;" onclick="postApi()">Test API write file</button>
+</main>
+<script>
+    const getApi = async () => {
+        const response = await fetch('/api')
+        const json = await response.json()
+        alert(`data: ${json.data}`);
+    }
+    const postApi = async () => {
+        const response = await fetch('/api', { method: 'POST' });
+        const json = await response.json()
+        alert(`data: ${json.data}`);
+    }
+</script>

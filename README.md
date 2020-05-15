@@ -1,2 +1,8 @@
 # expresjs-test
-a server test
+
+## Start
+
+```sh
+yarn
+yarn start
+```
